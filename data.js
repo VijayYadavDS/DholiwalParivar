@@ -391,6 +391,13 @@ const santoshYadav = person(
   []
 );
 
+const moolaRamYadav = person(
+  "Moola Ram Yadav",
+  "मूला राम यादव",
+  "male",
+  []
+);
+
 const madanYadav = person(
   "Madan Lal Yadav",
   "मदन लाल यादव",
@@ -734,6 +741,7 @@ hardevaYadav.children = [
   dhapuYadav,
   birjiYadav,
   santoshYadav,
+  moolaRamYadav,
   madanYadav
 ];
 
