@@ -398,6 +398,57 @@ const madanYadav = person(
   []
 );
 
+const banwariLalYadav = person(
+  "Banwari Lal Yadav",
+  "बनवारी लाल यादव",
+  "male",
+  []
+);
+
+const lalchandYadav = person(
+  "Lalchand Yadav",
+  "लालचंद यादव",
+  "male",
+  []
+);
+
+const jagdishYadav = person(
+  "Jagdish Yadav",
+  "जगदीश यादव",
+  "male",
+  []
+);
+
+const ramjiLalYadav1 = person(
+  "Ramji Lal Yadav",
+  "रामजी लाल यादव",
+  "male",
+  []
+);
+
+const raghuveerYadav = person(
+  "Raghuveer Yadav",
+  "रघुवीर यादव",
+  "male",
+  []
+);
+
+const bhimSinghYadav = person(
+  "Bhim Singh Yadav",
+  "भीम सिंह यादव",
+  "male",
+  []
+);
+
+const prahaladYadav = person(
+  "Prahalad Yadav",
+  "प्रह्लाद यादव",
+  "male",
+  []
+);
+
+
+
 // ============================================================
 // GENERATION 5 — CHHOTU RAM'S CHILDREN
 // ============================================================
@@ -684,6 +735,16 @@ hardevaYadav.children = [
   birjiYadav,
   santoshYadav,
   madanYadav
+];
+
+lakshmanYadav.children = [
+  banwariLalYadav,
+  lalchandYadav,
+  jagdishYadav,
+  ramjiLalYadav1,
+  raghuveerYadav,
+  bhimSinghYadav,
+  prahaladYadav
 ];
 
 // chhotu ram
