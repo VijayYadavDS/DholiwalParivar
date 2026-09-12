@@ -439,6 +439,19 @@ jhuthaRamYadav.children = [
   patassiYadav
 ];
 
+// hardevaYadav
+
+hardevaYadav.children = [
+  shravanYadav,
+  girdhariYadav,
+  prabhatiYadav,
+  jhabarYadav,
+  dhapuYadav,
+  birjiYadav,
+  santoshYadav,
+  madanYadav
+];
+
 // chhotu ram
 
 chhotuRamYadav.children = [
