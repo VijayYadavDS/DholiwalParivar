@@ -16,7 +16,7 @@
 const familyTree = {
 
   name: "Kheenva Ram Yadav",
-  nameHi: "खीणवा राम यादव",
+  nameHi: "खींवा राम यादव",
 
   gender: "male",
 
