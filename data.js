@@ -426,6 +426,20 @@ const jagdishYadav = person(
   []
 );
 
+const teejaYadav = person(
+  "Teeja Yadav",
+  "तीजा यादव",
+  "female",
+  []
+);
+
+const maaliYadav = person(
+  "Maali Yadav",
+  "माली यादव",
+  "female",
+  []
+);
+
 const ramjiLalYadav1 = person(
   "Ramji Lal Yadav",
   "रामजी लाल यादव",
@@ -749,6 +763,8 @@ lakshmanYadav.children = [
   banwariLalYadav,
   lalchandYadav,
   jagdishYadav,
+  teejaYadav,
+  maaliYadav,
   ramjiLalYadav1,
   raghuveerYadav,
   bhimSinghYadav,
