@@ -210,8 +210,10 @@ const nikhilYadav = person(
   "male",
   []
 );
+
+
 // ============================================================
-// GENERATION 7 — Mahendra Yadav'S CHILDREN
+// GENERATION 7 — MAHENDRA YADAV'S CHILDREN
 // ============================================================
 
 const cheekuYadav = person(
@@ -220,13 +222,13 @@ const cheekuYadav = person(
   "male",
   []
 );
+
 const saumyaYadav = person(
   "Saumya Yadav",
   "सौम्य यादव",
   "male",
   []
 );
-
 
 
 // ============================================================
@@ -249,7 +251,7 @@ kishanYadav.children = [
 ];
 
 
-// Nathu Ram → Jhutha Ram, Hardev(a), Lakshman, Chhotu Ram
+// Nathu Ram → Jhutha Ram, Hardeva, Lakshman, Chhotu Ram
 
 nathuRamYadav.children = [
   jhuthaRamYadav,
@@ -266,18 +268,19 @@ jhuthaRamYadav.children = [
 ];
 
 
-// Bodu Ram → Prem, Ramkala, Durga Prasad, Mamta, Mahendra
+// Bodu Ram → Prem, Ramkala, Durga Prasad, Mamta, Mahendra, Vikas
 
 boduRamYadav.children = [
   premYadav,
   ramkalaYadav,
   durgaPrasadYadav,
   mamtaYadav,
-  mahendraYadav
+  mahendraYadav,
+  vikasYadav
 ];
 
 
-// Durga Prasad → Anjali, Nachita, Nikhil, Yadav
+// Durga Prasad → Anjali, Nachita, Nikhil
 
 durgaPrasadYadav.children = [
   anjaliYadav,
@@ -285,16 +288,13 @@ durgaPrasadYadav.children = [
   nikhilYadav
 ];
 
-durgaPrasadYadav.children = [
-  anjaliYadav,
-  nachitaYadav,
-  nikhilYadav
-];
+
+// Mahendra → Cheeku, Saumya
 
 mahendraYadav.children = [
   cheekuYadav,
-  saumyaYadav,
-]
+  saumyaYadav
+];
 
 
 // ============================================================
