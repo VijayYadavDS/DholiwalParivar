@@ -93,6 +93,48 @@ const nathuRamYadav = person(
   []
 );
 
+const gumaanSinghYadav = person(
+  "Gumaan Singh Yadav",
+  "गुमान सिंह यादव",
+  "male",
+  []
+);
+
+const bisanSinghYadav = person(
+  "Bisan Singh Yadav",
+  "बिसन सिंह यादव",
+  "male",
+  []
+);
+
+const amboYadav = person(
+  "Ambo Yadav",
+  "आंबो यादव",
+  "male",
+  []
+);
+
+const birduYadav = person(
+  "Birdu Yadav",
+  "बिरदू यादव",
+  "male",
+  []
+);
+
+const harjinotAvailableYadav = person(
+  "Not Available",
+  "उपलब्ध नहीं",
+  "male",
+  []
+);
+
+const ramjilalYadav = person(
+  "Ramjilal Yadav",
+  "रामजीलाल यादव",
+  "male",
+  []
+);
+
 
 // ============================================================
 // GENERATION 4 — NATHU RAM'S FOUR CHILDREN
@@ -133,6 +175,144 @@ const chhotuRamYadav = person(
   []
 );
 
+// ============================================================
+// GENERATION 4 — Gumaan
+// ============================================================
+
+const jodharamYadav = person(
+  "Jodharam Yadav",
+  "जोधाराम यादव",
+  "male",
+  []
+);
+
+const GumaannotAvailableYadav = person(
+  "Not Available",
+  "उपलब्ध नहीं",
+  "male",
+  []
+);
+
+const pooraRamYadav = person(
+  "Poora Ram Yadav",
+  "पूरा राम यादव",
+  "male",
+  []
+);
+
+const baluramYadav = person(
+  "Baluram Yadav",
+  "बालूराम यादव",
+  "male",
+  []
+);
+
+const narsiYadav = person(
+  "Narsi Yadav",
+  "नरसी यादव",
+  "male",
+  []
+);
+
+const govindYadav = person(
+  "Govind Yadav",
+  "गोविंद यादव",
+  "male",
+  []
+);
+
+const jaitaYadav = person(
+  "Jaita Yadav",
+  "जैता यादव",
+  "male",
+  []
+);
+
+const kahnaRamYadav = person(
+  "Kahna Ram Yadav",
+  "काहना राम यादव",
+  "male",
+  []
+);
+
+const laduRamYadav = person(
+  "Ladu Ram Yadav",
+  "लाडू राम यादव",
+  "male",
+  []
+);
+
+const dhannoYadav = person(
+  "Dhanno Yadav",
+  "धन्नो यादव",
+  "male",
+  []
+);
+
+
+// ============================================================
+// GENERATION 5 — Poora RAM'S CHILD
+// ============================================================
+
+const rudaRamYadav = person(
+  "Ruda Ram Yadav",
+  "रूड़ा राम यादव",
+  "male",
+  []
+);
+
+const hanumanYadav = person(
+  "Hanuman Yadav",
+  "हनुमान यादव",
+  "male",
+  []
+);
+
+const hardevaYadav2 = person(
+  "Hardeva Yadav",
+  "हरदेवा यादव",
+  "male",
+  []
+);
+
+const jagannathYadav = person(
+  "Jagannath Yadav",
+  "जगन्नाथ यादव",
+  "male",
+  []
+);
+
+
+const garuYadav = person(
+  "Garu Yadav",
+  "गारू यादव",
+  "male",
+  []
+);
+
+const gullaYadav = person(
+  "Gulla Yadav",
+  "गुल्ला यादव",
+  "male",
+  []
+);
+
+const baluramNotAvailableDaughter = person(
+  "Not Available",
+  "उपलब्ध नहीं",
+  "female",
+  []
+);
+
+const omkarYadav = person(
+  "Omkar Yadav",
+  "ओंकार यादव",
+  "male",
+  []
+);
+
+
+
 
 // ============================================================
 // GENERATION 5 — JHUTHA RAM'S CHILD
@@ -158,6 +338,7 @@ const patassiYadav = person(
   "female",
   []
 );
+
 // ============================================================
 // GENERATION 5 — hardeva RAM'S CHILD
 // ============================================================
@@ -412,6 +593,15 @@ kheenvaRamYadav.children = [
   kishanYadav
 ];
 
+// KiharjiYadav →
+
+harjiYadav.children = [
+  gumaanSinghYadav,
+  bisanSinghYadav,
+  amboYadav,
+  birduYadav,
+  harjinotAvailableYadav
+];
 
 // Kishan → Nathu Ram
 
@@ -430,6 +620,50 @@ nathuRamYadav.children = [
   chhotuRamYadav
 ];
 
+gumaanSinghYadav.children = [
+  jodharamYadav,
+  GumaannotAvailableYadav,
+  pooraRamYadav
+];
+
+bisanSinghYadav.children = [
+  baluramYadav,
+  narsiYadav,
+  govindYadav,
+  jaitaYadav,
+  kahnaRamYadav
+];
+
+// pooraRamYadav
+pooraRamYadav.children = [
+  hanumanYadav,
+  hardevaYadav2,
+  jagannathYadav
+];
+
+baluramYadav.children = [
+  garuYadav,
+  gullaYadav,
+  baluramNotAvailableDaughter
+];
+
+baluramNotAvailableDaughter.children = [
+  ramjilalYadav
+];
+
+laduRamYadav.children = [
+  rudaRamYadav
+];
+
+
+narsiYadav.children = [
+  omkarYadav
+];
+
+birduYadav.children = [
+  laduRamYadav,
+  dhannoYadav
+];
 
 // Jhutha Ram → Bodu Ram
 
