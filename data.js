@@ -298,8 +298,8 @@ const gullaYadav = person(
 );
 
 const baluramNotAvailableDaughter = person(
-  "Not Available",
-  "उपलब्ध नहीं",
+  "Name Not Available",
+  "नाम उपलब्ध नहीं",
   "female",
   []
 );
