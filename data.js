@@ -13,147 +13,295 @@
    nested the same way, generation after generation.
    photo: leave as "" to show initials instead of a picture.
 ------------------------------------------------------------- */
-const familyTree = {
+// ============================================================
+// PERSON HELPER
+// ============================================================
 
-  name: "Kheenva Ram Yadav",
-  nameHi: "खींवा राम यादव",
+const person = (
+  name,
+  nameHi,
+  gender,
+  children = [],
+  years = "- : -",
+  yearsHi = "1950 – ",
+  spouse = "Not Available",
+  spouseHi = "उपलब्ध नहीं",
+  photo = "",
+  role = "",
+  roleHi = ""
+) => ({
+  name,
+  nameHi,
+  gender,
+  years,
+  yearsHi,
+  spouse,
+  spouseHi,
+  photo,
+  role,
+  roleHi,
+  children
+});
 
-  gender: "male",
 
-  years: "- : -",
-  yearsHi: "- : -",
+// ============================================================
+// GENERATION 1
+// ============================================================
 
-  spouse: "Not Available",
-  spouseHi: "उपलब्ध नहीं",
+const kheenvaRamYadav = person(
+  "Kheenva Ram Yadav",
+  "खींवा राम यादव",
+  "male",
+  [],
+  "- : -",
+  "- : -",
+  "Not Available",
+  "उपलब्ध नहीं",
+  "",
+  "Founder",
+  "संस्थापक"
+);
 
-  role: "Founder",
-  roleHi: "संस्थापक",
 
-  photo: "",
+// ============================================================
+// GENERATION 2
+// ============================================================
 
-  children: [
+const harjiYadav = person(
+  "Harji Yadav",
+  "हरजी यादव",
+  "male",
+  []
+);
 
-    {
-      name: "Harji Yadav",
-      nameHi: "हरजी यादव",
+const kishanYadav = person(
+  "Kishan Yadav",
+  "किशन यादव",
+  "male",
+  []
+);
 
-      gender: "male",
 
-      years: "- : -",
-      yearsHi: "1800 – 1900",
+// ============================================================
+// GENERATION 3
+// ============================================================
 
-      spouse: "Not Available",
-      spouseHi: "उपलब्ध नहीं",
+const nathuRamYadav = person(
+  "Nathu Ram Yadav",
+  "नाथू राम यादव",
+  "male",
+  []
+);
 
-      photo: "",
 
-      children: []
-    },
+// ============================================================
+// GENERATION 4 — NATHU RAM'S FOUR CHILDREN
+// ============================================================
 
-    {
-      name: "Kishan Yadav",
-      nameHi: "किशन यादव",
+const jhuthaRamYadav = person(
+  "Jhutha Ram Yadav",
+  "झूथा राम यादव",
+  "male",
+  []
+);
 
-      gender: "male",
+const hardevaYadav = person(
+  "Hardeva Yadav",
+  "हरदेवा यादव",
+  "male",
+  []
+);
 
-      years: "- : -",
-      yearsHi: "1950 – ",
+const lakshmanYadav = person(
+  "Lakshman Yadav",
+  "लक्ष्मण यादव",
+  "male",
+  []
+);
 
-      spouse: "Not Available",
-      spouseHi: "उपलब्ध नहीं",
+const chhotuRamYadav = person(
+  "Chhotu Ram Yadav",
+  "छोटू राम यादव",
+  "male",
+  []
+);
 
-      photo: "",
 
-      children: [
-        {
-          name: "Nathu Ram Yadav",
-          nameHi: "नाथू राम यादव",
+// ============================================================
+// GENERATION 5 — JHUTHA RAM'S CHILD
+// ============================================================
 
-          gender: "male",
+const boduRamYadav = person(
+  "Bodu Ram Yadav",
+  "बोदू राम यादव",
+  "male",
+  []
+);
 
-          years: "- : -",
-          yearsHi: "1950 – ",
 
-          spouse: "Not Available",
-          spouseHi: "उपलब्ध नहीं",
+// ============================================================
+// GENERATION 6 — BODU RAM'S CHILDREN
+// ============================================================
 
-          photo: "",
+const premYadav = person(
+  "Prem Yadav",
+  "प्रेम यादव",
+  "female",
+  []
+);
 
-          children: [
-            {
-              name: "Jhutha Ram Yadav",
-              nameHi: "झूथा राम यादव",
+const ramkalaYadav = person(
+  "Ramkala Yadav",
+  "रामकला यादव",
+  "female",
+  []
+);
 
-              gender: "male",
+const durgaPrasadYadav = person(
+  "Durga Prasad Yadav",
+  "दुर्गा प्रसाद यादव",
+  "male",
+  []
+);
 
-              years: "- : -",
-              yearsHi: "1950 – ",
+const mamtaYadav = person(
+  "Mamta Yadav",
+  "ममता यादव",
+  "female",
+  []
+);
 
-              spouse: "Not Available",
-              spouseHi: "उपलब्ध नहीं",
+const mahendraYadav = person(
+  "Mahendra Yadav",
+  "महेंद्र यादव",
+  "male",
+  []
+);
 
-              photo: "",
+const vikasYadav = person(
+  "Vikas Yadav",
+  "विकास यादव",
+  "male",
+  []
+);
 
-              children: []
-            },
 
-            {
-              name: "Hardeva Yadav",
-              nameHi: "हरदेवा यादव",
+// ============================================================
+// GENERATION 7 — DURGA PRASAD'S CHILDREN
+// ============================================================
 
-              gender: "male",
+const anjaliYadav = person(
+  "Anjali Yadav",
+  "अंजली यादव",
+  "female",
+  []
+);
 
-              years: "- : -",
-              yearsHi: "1950 – ",
+const nachitaYadav = person(
+  "Nachita Yadav",
+  "नचिता यादव",
+  "female",
+  []
+);
 
-              spouse: "Not Available",
-              spouseHi: "उपलब्ध नहीं",
+const nikhilYadav = person(
+  "Nikhil Yadav",
+  "निखिल यादव",
+  "male",
+  []
+);
+// ============================================================
+// GENERATION 7 — Mahendra Yadav'S CHILDREN
+// ============================================================
 
-              photo: "",
+const cheekuYadav = person(
+  "Cheeku Yadav",
+  "चीकू यादव",
+  "male",
+  []
+);
+const saumyaYadav = person(
+  "Saumya Yadav",
+  "सौम्य यादव",
+  "male",
+  []
+);
 
-              children: []
-            },
 
-            {
-              name: "Lakshman Yadav",
-              nameHi: "लक्ष्मण यादव",
 
-              gender: "male",
+// ============================================================
+// BUILD HIERARCHY
+// ============================================================
 
-              years: "- : -",
-              yearsHi: "1950 – ",
 
-              spouse: "Not Available",
-              spouseHi: "उपलब्ध नहीं",
+// Kheenva Ram → Harji, Kishan
 
-              photo: "",
+kheenvaRamYadav.children = [
+  harjiYadav,
+  kishanYadav
+];
 
-              children: []
-            },
 
-            {
-              name: "Chhotu Ram Yadav",
-              nameHi: "छोटू राम यादव",
+// Kishan → Nathu Ram
 
-              gender: "male",
+kishanYadav.children = [
+  nathuRamYadav
+];
 
-              years: "- : -",
-              yearsHi: "1950 – ",
 
-              spouse: "Not Available",
-              spouseHi: "उपलब्ध नहीं",
+// Nathu Ram → Jhutha Ram, Hardev(a), Lakshman, Chhotu Ram
 
-              photo: "",
+nathuRamYadav.children = [
+  jhuthaRamYadav,
+  hardevaYadav,
+  lakshmanYadav,
+  chhotuRamYadav
+];
 
-              children: []
-            }
-          ]
-        }
-      ]
-    }
 
-  ]
-};
+// Jhutha Ram → Bodu Ram
+
+jhuthaRamYadav.children = [
+  boduRamYadav
+];
+
+
+// Bodu Ram → Prem, Ramkala, Durga Prasad, Mamta, Mahendra
+
+boduRamYadav.children = [
+  premYadav,
+  ramkalaYadav,
+  durgaPrasadYadav,
+  mamtaYadav,
+  mahendraYadav
+];
+
+
+// Durga Prasad → Anjali, Nachita, Nikhil, Yadav
+
+durgaPrasadYadav.children = [
+  anjaliYadav,
+  nachitaYadav,
+  nikhilYadav
+];
+
+durgaPrasadYadav.children = [
+  anjaliYadav,
+  nachitaYadav,
+  nikhilYadav
+];
+
+mahendraYadav.children = [
+  cheekuYadav,
+  saumyaYadav,
+]
+
+
+// ============================================================
+// FINAL FAMILY TREE
+// ============================================================
+
+const familyTree = kheenvaRamYadav;
 
 /* ---------- 2. EVENTS ----------
    type: "photo"  -> shows an image (use "image" field, a URL or path)
