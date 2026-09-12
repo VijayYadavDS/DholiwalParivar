@@ -119,6 +119,13 @@ const lakshmanYadav = person(
   []
 );
 
+const gauriYadav = person(
+  "Gauri Yadav",
+  "गौरी यादव",
+  "female",
+  []
+);
+
 const chhotuRamYadav = person(
   "Chhotu Ram Yadav",
   "छोटू राम यादव",
@@ -138,10 +145,161 @@ const boduRamYadav = person(
   []
 );
 
+const gothiYadav = person(
+  "Gothi Yadav",
+  "गोठी यादव",
+  "female",
+  []
+);
+
+const patassiYadav = person(
+  "Pataasi Yadav",
+  "पतासी यादव",
+  "female",
+  []
+);
+// ============================================================
+// GENERATION 5 — hardeva RAM'S CHILD
+// ============================================================
+const shravanYadav = person(
+  "Shravan Yadav",
+  "श्रवण यादव",
+  "female",
+  []
+);
+
+const girdhariYadav = person(
+  "Girdhari Lal Yadav",
+  "गिरधारी लाल यादव",
+  "male",
+  []
+);
+
+const prabhatiYadav = person(
+  "Prabhati Yadav",
+  "प्रभाती यादव",
+  "female",
+  []
+);
+
+const jhabarYadav = person(
+  "Jhabar Mal Yadav",
+  "झाबर मल यादव",
+  "male",
+  []
+);
+
+const dhapuYadav = person(
+  "Dhapu Yadav",
+  "धापू यादव",
+  "female",
+  []
+);
+
+const birjiYadav = person(
+  "Birji Yadav",
+  "बिरजी यादव",
+  "female",
+  []
+);
+
+const santoshYadav = person(
+  "Santosh Yadav",
+  "संतोष यादव",
+  "female",
+  []
+);
+
+const madanYadav = person(
+  "Madan Lal Yadav",
+  "मदन लाल यादव",
+  "male",
+  []
+);
+
+// ============================================================
+// GENERATION 5 — CHHOTU RAM'S CHILDREN
+// ============================================================
+
+const mahavirPrasadYadav = person(
+  "Mahavir Prasad Yadav",
+  "महावीर प्रसाद यादव",
+  "male",
+  []
+);
+
+const sajnaYadav = person(
+  "Sajna Yadav",
+  "सजना यादव",
+  "female",
+  []
+);
+
+const bhansinghYadav = person(
+  "Bhansingh Yadav",
+  "भानसिंह यादव",
+  "male",
+  []
+);
+
+const mohanLalYadav = person(
+  "Mohan Lal Yadav",
+  "मोहन लाल यादव",
+  "male",
+  []
+);
+
+const sumerSinghYadav = person(
+  "Sumer Singh Yadav",
+  "सुमेर सिंह यादव",
+  "male",
+  []
+);
+
+const kailashChandYadav = person(
+  "Kailash Chand Yadav",
+  "कैलाश चंद यादव",
+  "male",
+  []
+);
+
+const gyanChandYadav = person(
+  "Gyan Chand Yadav",
+  "ज्ञान चंद यादव",
+  "male",
+  []
+);
+
+const savitriYadav = person(
+  "Savitri Yadav",
+  "सावित्री यादव",
+  "female",
+  []
+);
+
+const ramSinghYadav = person(
+  "Ram Singh Yadav",
+  "राम सिंह यादव",
+  "male",
+  []
+);
+
+const vinodYadav = person(
+  "Vinod Yadav",
+  "विनोद यादव",
+  "male",
+  []
+);
 
 // ============================================================
 // GENERATION 6 — BODU RAM'S CHILDREN
 // ============================================================
+const durgaPrasadYadav = person(
+  "Durga Prasad Yadav",
+  "दुर्गा प्रसाद यादव",
+  "male",
+  []
+);
 
 const premYadav = person(
   "Prem Yadav",
@@ -154,13 +312,6 @@ const ramkalaYadav = person(
   "Ramkala Yadav",
   "रामकला यादव",
   "female",
-  []
-);
-
-const durgaPrasadYadav = person(
-  "Durga Prasad Yadav",
-  "दुर्गा प्रसाद यादव",
-  "male",
   []
 );
 
@@ -211,22 +362,40 @@ const nikhilYadav = person(
   []
 );
 
+const ayushYadav = person(
+  "Ayush Yadav",
+  "आयुष यादव",
+  "male",
+  []
+);
 
 // ============================================================
 // GENERATION 7 — MAHENDRA YADAV'S CHILDREN
 // ============================================================
 
-const cheekuYadav = person(
-  "Cheeku Yadav",
-  "चीकू यादव",
-  "male",
-  []
-);
-
 const saumyaYadav = person(
   "Saumya Yadav",
   "सौम्य यादव",
   "male",
+  []
+);
+
+const ayanshYadav = person(
+  "Ayansh Yadav",
+  "अयांश यादव",
+  "male",
+  []
+);
+
+
+// ============================================================
+// GENERATION 7 — VIKAS YADAV'S CHILDREN
+// ============================================================
+
+const himaniYadav = person(
+  "Himani Yadav",
+  "हिमानी यादव",
+  "female",
   []
 );
 
@@ -257,6 +426,7 @@ nathuRamYadav.children = [
   jhuthaRamYadav,
   hardevaYadav,
   lakshmanYadav,
+  gauriYadav,
   chhotuRamYadav
 ];
 
@@ -264,16 +434,33 @@ nathuRamYadav.children = [
 // Jhutha Ram → Bodu Ram
 
 jhuthaRamYadav.children = [
-  boduRamYadav
+  boduRamYadav,
+  gothiYadav,
+  patassiYadav
+];
+
+// chhotu ram
+
+chhotuRamYadav.children = [
+  mahavirPrasadYadav,
+  sajnaYadav,
+  bhansinghYadav,
+  mohanLalYadav,
+  sumerSinghYadav,
+  kailashChandYadav,
+  gyanChandYadav,
+  savitriYadav,
+  ramSinghYadav,
+  vinodYadav
 ];
 
 
 // Bodu Ram → Prem, Ramkala, Durga Prasad, Mamta, Mahendra, Vikas
 
 boduRamYadav.children = [
+  durgaPrasadYadav,
   premYadav,
   ramkalaYadav,
-  durgaPrasadYadav,
   mamtaYadav,
   mahendraYadav,
   vikasYadav
@@ -285,15 +472,20 @@ boduRamYadav.children = [
 durgaPrasadYadav.children = [
   anjaliYadav,
   nachitaYadav,
-  nikhilYadav
+  nikhilYadav,
+  ayushYadav
 ];
 
 
 // Mahendra → Cheeku, Saumya
 
 mahendraYadav.children = [
-  cheekuYadav,
-  saumyaYadav
+  saumyaYadav,
+  ayanshYadav,
+];
+
+vikasYadav.children = [
+  himaniYadav
 ];
 
 
