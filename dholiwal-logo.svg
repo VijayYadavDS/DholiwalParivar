@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F6F0"/>
+    </radialGradient>
+
+    <!-- Outer Ring Gradient -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B4D3E"/>
+      <stop offset="50%" stop-color="#2C5E4C"/>
+      <stop offset="100%" stop-color="#0F3328"/>
+    </linearGradient>
+
+    <!-- Tree Trunk & Roots Gradient -->
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#153E31"/>
+      <stop offset="100%" stop-color="#0B251D"/>
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#F3E5AB"/>
+      <stop offset="100%" stop-color="#AA7C11"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+
+  <!-- Outer Border & Circular Frame -->
+  <circle cx="400" cy="400" r="370" fill="none" stroke="url(#ringGrad)" stroke-width="4"/>
+  <circle cx="400" cy="400" r="358" fill="none" stroke="url(#ringGrad)" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="400" cy="400" r="348" fill="none" stroke="url(#ringGrad)" stroke-width="1"/>
+
+  <!-- Decorative Border Accents -->
+  <g fill="#1B4D3E">
+    <circle cx="400" cy="38" r="4"/>
+    <circle cx="400" cy="762" r="4"/>
+    <circle cx="38" cy="400" r="4"/>
+    <circle cx="762" cy="400" r="4"/>
+  </g>
+
+  <!-- ==================== EMBLEM (TREE & FAMILY) ==================== -->
+  <g filter="url(#dropShadow)">
+    <!-- Tree Leaves / Canopy -->
+    <!-- Green Leaves -->
+    <path d="M400,150 C380,110 330,120 320,160 C300,130 250,150 260,190 C230,170 190,200 210,230 C180,240 180,280 210,300 C240,290 270,320 300,300 C330,340 370,330 400,320 Z" fill="#2E7D32" opacity="0.9"/>
+    <!-- Orange & Blue Accents -->
+    <path d="M400,150 C420,110 470,120 480,160 C500,130 550,150 540,190 C570,170 610,200 590,230 C620,240 620,280 590,300 C560,290 530,320 500,300 C470,340 430,330 400,320 Z" fill="#43A047" opacity="0.9"/>
+    
+    <!-- Individual Leaf Details -->
+    <g fill="#E67E22">
+      <path d="M350,130 Q370,110 360,90 Q340,110 350,130 Z"/>
+      <path d="M450,130 Q430,110 440,90 Q460,110 450,130 Z"/>
+      <path d="M280,180 Q300,160 290,140 Q270,160 280,180 Z"/>
+      <path d="M520,180 Q500,160 510,140 Q530,160 520,180 Z"/>
+    </g>
+    <g fill="#2980B9">
+      <path d="M310,220 Q330,200 310,180 Q300,200 310,220 Z"/>
+      <path d="M490,220 Q470,200 490,180 Q500,200 490,220 Z"/>
+    </g>
+    <g fill="#F39C12">
+      <path d="M390,180 Q400,150 410,180 Q400,200 390,180 Z"/>
+      <path d="M230,230 Q250,220 250,200 Q230,210 230,230 Z"/>
+      <path d="M570,230 Q550,220 550,200 Q570,210 570,230 Z"/>
+    </g>
+
+    <!-- Main Trunk -->
+    <path d="M375,300 C370,360 350,390 310,430 C340,420 370,420 380,470 L420,470 C430,420 460,420 490,430 C450,390 430,360 425,300 Z" fill="url(#trunkGrad)"/>
+
+    <!-- Family Silhouettes inside Tree Roots/Trunk Base -->
+    <!-- Father -->
+    <circle cx="380" cy="365" r="10" fill="#2980B9"/>
+    <path d="M365,400 C365,380 395,380 395,400 Z" fill="#2980B9"/>
+    <!-- Mother -->
+    <circle cx="410" cy="370" r="9" fill="#E67E22"/>
+    <path d="M396,400 C396,383 424,383 424,400 Z" fill="#E67E22"/>
+    <!-- Children -->
+    <circle cx="355" cy="385" r="7" fill="#27AE60"/>
+    <path d="M344,405 C344,395 366,395 366,405 Z" fill="#27AE60"/>
+    <circle cx="435" cy="385" r="7" fill="#F1C40F"/>
+    <path d="M424,405 C424,395 446,395 446,405 Z" fill="#F1C40F"/>
+
+    <!-- Roots branching around the house -->
+    <path d="M310,430 Q260,450 230,480 M330,440 Q290,470 270,510 M350,450 Q320,490 310,530" stroke="#153E31" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M490,430 Q540,450 570,480 M470,440 Q510,470 530,510 M450,450 Q480,490 490,530" stroke="#153E31" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- House Symbol at Base of Tree -->
+    <path d="M400,475 L355,515 L367,515 L367,555 L433,555 L433,515 L445,515 Z" fill="#1B4D3E" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- House Door & Window -->
+    <rect x="390" y="525" width="20" height="30" rx="3" fill="#FFFFFF"/>
+    <rect x="375" y="525" width="10" height="10" fill="#FFFFFF"/>
+    <rect x="415" y="525" width="10" height="10" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ==================== TYPOGRAPHY ==================== -->
+  
+  <!-- Primary Heading: यादव (YADAV) -->
+  <text x="400" y="625" text-anchor="middle" font-family="'Mukta', 'Kohinoor Devanagari', 'Noto Sans Devanagari', sans-serif" font-weight="800" font-size="62" fill="#1B4D3E" letter-spacing="1">
+    यादव
+  </text>
+
+  <!-- Secondary Heading: धोलीवाल परिवार (DHOLIWAL PARIVAR) -->
+  <text x="400" y="685" text-anchor="middle" font-family="'Mukta', 'Kohinoor Devanagari', 'Noto Sans Devanagari', sans-serif" font-weight="700" font-size="44" fill="#2C5E4C" letter-spacing="1">
+    धोलीवाल परिवार
+  </text>
+
+  <!-- Decorative Accent Line below Text -->
+  <g transform="translate(0, 10)">
+    <line x1="280" y1="705" x2="360" y2="705" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="400" cy="705" r="4" fill="#D4AF37"/>
+    <line x1="440" y1="705" x2="520" y2="705" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
